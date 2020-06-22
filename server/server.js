@@ -29,10 +29,10 @@ const app = express();
 mongoose.connect(
   process.env.MONGODB_URI ||
   'mongodb://localhost/ProjectThree'
-)
+);
 mongoose.connection.on('error', err => {
-  console.log(`Mongoose connection err:\n${err}`)
-})
+  console.log(`Mongoose connection err:\n${err}`);
+});
 
 //-- Middleware --------------------------------------------------------------
 app.use(logger(LOG_MODE));

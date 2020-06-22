@@ -13,12 +13,12 @@ const UserSchema = new Schema({
     required: 'A password is required',
     validate: [
       function (input) {
-        return input.length >= 4
+        return input.length >= 4;
       },
       'Password should be four characters or longer'
     ]
   },
-})
+});
 
 class newUser {
   constructor({ id, email, password }) {
