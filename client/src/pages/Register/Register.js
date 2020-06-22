@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Redirect} from 'react-router-dom'
+import {Redirect} from 'react-router-dom';
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 import API from '../../lib/API';
 
@@ -14,8 +14,9 @@ const Register = () => {
     API.Users.create(email, password)
       .then(response => response.data)
       .then(user =>{
-        setRedirectToReferrer(true)
-        console.log(user)})
+        setRedirectToReferrer(true);
+        console.log(user);
+      })
       .catch(err => setError(err));
   };
   if (redirectToReferrer) {
