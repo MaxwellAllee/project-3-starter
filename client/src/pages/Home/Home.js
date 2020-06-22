@@ -2,7 +2,7 @@ import React from 'react';
 
 import logo from './logo.svg';
 
-const HomePage = props => {
+const HomePage = () => {
   return (
     <div className='Home'>
       <div className='row'>
@@ -10,7 +10,7 @@ const HomePage = props => {
           <img src={logo} className='App-logo' alt='logo' />
           <p>
             Edit <code>src/pages/Home.js</code> and save to reload.
-            </p>
+          </p>
           <a
             className='App-link'
             href='https://reactjs.org'
@@ -18,7 +18,7 @@ const HomePage = props => {
             rel="noopener noreferrer"
           >
             Learn React
-            </a>
+          </a>
         </div>
       </div>
     </div>
